@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Переводчик на птичий</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+    }
+
+    input, button {
+        margin: 10px;
+        padding: 5px;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+  <p><img src="bird.png" alt="Здесь должна быть картинка"></p>
+  <h1>Переводчик на птичий</h1>
+  <label for="inputText">Введите слова для перевода:</label>
+  <input type="text" id="inputText">
+  <p></p><button onclick="trans()">Перевести</button>
+  <p>Переведенный текст:</p>
+  <textarea id="outputText" rows="4" cols="50" readonly></textarea>
+
+  <script src="translator.js"></script>
+</body>
+</html>
